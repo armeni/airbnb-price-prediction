@@ -9,11 +9,13 @@ Each row corresponds to a separate Airbnb listing in Melbourne. As a consequence
 
 ## Methodology
 To predict the price of Airbnb housing in Melbourne, the approach of sequential use of a set of models from simple to more complex, as well as an assessment of each subsequent model relative to the previous one, was chosen. 
+
 Selected models: 
-- Linear Regression, Ridge, Lasso, Elastic Net
+- Regression models: Ordinary Least Squares, Ridge, Lasso, Elastic Net
 - k-nearest neighbors method 
-- Random Forest
-- Gradient Boosting methods: XGBoost, CatBoost, LightGBM 
+- Random Forest (soon)
+- Gradient Boosting methods: XGBoost, CatBoost, LightGBM (soon)
+
 At the initial stage, the quality of the model is also compared with respect to the application of methods for processing missing values: zero, average, and median.
 
 The models quality is evaluated using 5-folds cross-validation according to the RMSE metric. For gradient boosting models, 10% of the data is additionally allocated for validation and the search for the moment of early stopping of training in order to maintain the highest level of generalizing ability.
